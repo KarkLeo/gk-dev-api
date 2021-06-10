@@ -1294,6 +1294,62 @@
                 }
               }
             }
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "uid"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "created",
+                    "accepted",
+                    "paid",
+                    "sent",
+                    "received"
+                  ]
+                },
+                "user": {
+                  "type": "string"
+                },
+                "delivery_info": {
+                  "type": "component"
+                },
+                "cart_item": {
+                  "type": "component"
+                },
+                "total_cost": {
+                  "type": "number"
+                },
+                "discount": {
+                  "type": "number"
+                },
+                "discounted_cost": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1378,6 +1434,12 @@
                   "type": "integer"
                 }
               }
+            }
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "created_by": {

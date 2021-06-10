@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/currency-setting",
+      "handler": "currency-setting.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/currency-setting",
+      "handler": "currency-setting.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/currency-setting",
+      "handler": "currency-setting.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -105,6 +105,10 @@
     "category": {
       "model": "product-category",
       "via": "products"
+    },
+    "tags": {
+      "via": "products",
+      "collection": "product-tag"
     }
   }
 }

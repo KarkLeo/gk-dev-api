@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_page_product_carousels",
+  "info": {
+    "name": "product_carousel",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product"
+    }
+  }
+}

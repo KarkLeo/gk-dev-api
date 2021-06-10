@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "currency_settings",
+  "info": {
+    "name": "currency_setting"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "consfig": {
+      "type": "json"
+    }
+  }
+}

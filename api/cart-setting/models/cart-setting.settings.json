@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "cart_settings",
+  "info": {
+    "name": "cart-setting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "discount_settings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.discount-settings"
+    },
+    "wholesale_limit": {
+      "type": "decimal"
+    }
+  }
+}

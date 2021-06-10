@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_settings",
+  "info": {
+    "name": "contact_settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "list_of_numbers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.phone-number",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "list_of_addresses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.address"
+    },
+    "list_of_links": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "contact.link"
+    },
+    "list_of_emails": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "contact.email"
+    }
+  }
+}
