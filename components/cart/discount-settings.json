@@ -2,15 +2,18 @@
   "collectionName": "components_cart_discount_settings",
   "info": {
     "name": "discount_settings",
-    "icon": "bookmark"
+    "icon": "bookmark",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "total_cost": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "discount": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     }
   }
 }

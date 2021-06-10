@@ -328,7 +328,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "phone_number"
               ],
               "properties": {
                 "id": {
@@ -345,7 +346,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "address",
+                "coordinates"
               ],
               "properties": {
                 "id": {
@@ -365,7 +368,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
@@ -392,7 +397,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "email"
               ],
               "properties": {
                 "id": {
@@ -463,7 +469,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "phone_number"
               ],
               "properties": {
                 "id": {
@@ -480,7 +487,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "address",
+                "coordinates"
               ],
               "properties": {
                 "id": {
@@ -500,7 +509,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
@@ -527,7 +538,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "email"
               ],
               "properties": {
                 "id": {

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "product_tags",
   "info": {
-    "name": "product_tag"
+    "name": "product_tag",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,7 +22,8 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "key": {
       "pluginOptions": {
@@ -30,11 +32,12 @@
         }
       },
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "products": {
-      "collection": "product",
       "via": "tags",
+      "collection": "product",
       "dominant": true
     }
   }

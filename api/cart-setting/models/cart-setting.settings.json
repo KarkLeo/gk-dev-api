@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "cart_settings",
   "info": {
-    "name": "cart-setting",
+    "name": "cart-settings",
     "description": ""
   },
   "options": {
@@ -18,7 +18,8 @@
       "component": "cart.discount-settings"
     },
     "wholesale_limit": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     }
   }
 }

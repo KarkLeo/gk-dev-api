@@ -516,7 +516,15 @@
     "schemas": {
       "Order": {
         "required": [
-          "id"
+          "id",
+          "number",
+          "date",
+          "status",
+          "delivery_info",
+          "cart_item",
+          "total_cost",
+          "discount",
+          "discounted_cost"
         ],
         "properties": {
           "id": {
@@ -543,7 +551,10 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "first_name",
+              "last_name",
+              "phone_number"
             ],
             "properties": {
               "id": {
@@ -605,7 +616,11 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "firs_name",
+              "last_name",
+              "phone_number",
+              "is_novaposhta"
             ],
             "properties": {
               "id": {
@@ -639,7 +654,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "count",
+                "current_price"
               ],
               "properties": {
                 "id": {
@@ -647,7 +664,11 @@
                 },
                 "product": {
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
                   ],
                   "properties": {
                     "id": {
@@ -739,6 +760,16 @@
         }
       },
       "NewOrder": {
+        "required": [
+          "number",
+          "date",
+          "status",
+          "delivery_info",
+          "cart_item",
+          "total_cost",
+          "discount",
+          "discounted_cost"
+        ],
         "properties": {
           "number": {
             "type": "uid"
@@ -763,7 +794,11 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "firs_name",
+              "last_name",
+              "phone_number",
+              "is_novaposhta"
             ],
             "properties": {
               "id": {
@@ -797,7 +832,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "count",
+                "current_price"
               ],
               "properties": {
                 "id": {
@@ -805,7 +842,11 @@
                 },
                 "product": {
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
                   ],
                   "properties": {
                     "id": {

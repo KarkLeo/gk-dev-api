@@ -328,7 +328,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -432,7 +433,11 @@
                       "type": "array",
                       "items": {
                         "required": [
-                          "id"
+                          "id",
+                          "name",
+                          "vandor_code",
+                          "slug",
+                          "price"
                         ],
                         "properties": {
                           "id": {
@@ -562,7 +567,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -666,7 +672,11 @@
                       "type": "array",
                       "items": {
                         "required": [
-                          "id"
+                          "id",
+                          "name",
+                          "vandor_code",
+                          "slug",
+                          "price"
                         ],
                         "properties": {
                           "id": {

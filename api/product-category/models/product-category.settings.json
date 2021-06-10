@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "product_categories",
   "info": {
-    "name": "product_category"
+    "name": "product_category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,7 +22,8 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "pluginOptions": {
@@ -30,7 +32,8 @@
         }
       },
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "products": {
       "via": "category",

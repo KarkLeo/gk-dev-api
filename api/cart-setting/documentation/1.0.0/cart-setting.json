@@ -317,7 +317,8 @@
     "schemas": {
       "Cart-setting": {
         "required": [
-          "id"
+          "id",
+          "wholesale_limit"
         ],
         "properties": {
           "id": {
@@ -328,7 +329,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "total_cost",
+                "discount"
               ],
               "properties": {
                 "id": {
@@ -353,13 +356,18 @@
         }
       },
       "NewCart-setting": {
+        "required": [
+          "wholesale_limit"
+        ],
         "properties": {
           "discount_settings": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "total_cost",
+                "discount"
               ],
               "properties": {
                 "id": {

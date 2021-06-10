@@ -2,15 +2,18 @@
   "collectionName": "components_contact_addresses",
   "info": {
     "name": "address",
-    "icon": "location-arrow"
+    "icon": "location-arrow",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "address": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "coordinates": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

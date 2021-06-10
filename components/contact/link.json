@@ -2,15 +2,18 @@
   "collectionName": "components_contact_links",
   "info": {
     "name": "link",
-    "icon": "link"
+    "icon": "link",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "icon": {
       "type": "enumeration",

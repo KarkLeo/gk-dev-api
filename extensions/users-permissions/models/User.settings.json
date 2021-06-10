@@ -60,18 +60,22 @@
       "configurable": false
     },
     "first_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "last_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "phone_number": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "delivery_info": {
       "type": "component",
       "repeatable": true,
-      "component": "user.delivery-info"
+      "component": "user.delivery-info",
+      "required": false
     },
     "orders": {
       "via": "user",

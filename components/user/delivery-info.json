@@ -2,21 +2,26 @@
   "collectionName": "components_user_delivery_infos",
   "info": {
     "name": "delivery_info",
-    "icon": "atlas"
+    "icon": "atlas",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "firs_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "last_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "phone_number": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "is_novaposhta": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "city": {
       "type": "string"

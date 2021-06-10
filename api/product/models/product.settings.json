@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "product",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,7 +22,8 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "vandor_code": {
       "pluginOptions": {
@@ -29,7 +31,8 @@
           "localized": false
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "pluginOptions": {
@@ -38,7 +41,8 @@
         }
       },
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "description": {
       "pluginOptions": {
@@ -54,7 +58,8 @@
           "localized": false
         }
       },
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "old_price": {
       "pluginOptions": {
@@ -103,8 +108,8 @@
       "type": "string"
     },
     "category": {
-      "model": "product-category",
-      "via": "products"
+      "via": "products",
+      "model": "product-category"
     },
     "tags": {
       "via": "products",

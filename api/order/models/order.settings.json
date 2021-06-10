@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "number": {
-      "type": "uid"
+      "type": "uid",
+      "required": true
     },
     "date": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "status": {
       "type": "enumeration",
@@ -26,31 +28,37 @@
         "paid",
         "sent",
         "received"
-      ]
+      ],
+      "required": true
     },
     "user": {
+      "via": "orders",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "orders"
+      "model": "user"
     },
     "delivery_info": {
       "type": "component",
       "repeatable": false,
-      "component": "user.delivery-info"
+      "component": "user.delivery-info",
+      "required": true
     },
     "cart_item": {
       "type": "component",
       "repeatable": true,
-      "component": "cart.cart-item"
+      "component": "cart.cart-item",
+      "required": true
     },
     "total_cost": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "discount": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "discounted_cost": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "description": {
       "type": "text"

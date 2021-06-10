@@ -529,7 +529,9 @@
     "schemas": {
       "Product-category": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -545,7 +547,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -618,7 +624,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "slug"
               ],
               "properties": {
                 "id": {
@@ -667,6 +675,10 @@
         }
       },
       "NewProduct-category": {
+        "required": [
+          "name",
+          "slug"
+        ],
         "properties": {
           "name": {
             "type": "string"

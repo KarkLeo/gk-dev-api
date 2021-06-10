@@ -528,7 +528,10 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "first_name",
+                "last_name",
+                "phone_number"
               ],
               "properties": {
                 "id": {

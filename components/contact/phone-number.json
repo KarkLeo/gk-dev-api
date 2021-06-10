@@ -2,12 +2,14 @@
   "collectionName": "components_contact_phone_numbers",
   "info": {
     "name": "phone_number",
-    "icon": "phone-alt"
+    "icon": "phone-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "phone_number": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

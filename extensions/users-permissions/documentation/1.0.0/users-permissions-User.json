@@ -1188,7 +1188,10 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "first_name",
+          "last_name",
+          "phone_number"
         ],
         "properties": {
           "id": {
@@ -1265,7 +1268,11 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firs_name",
+                "last_name",
+                "phone_number",
+                "is_novaposhta"
               ],
               "properties": {
                 "id": {
@@ -1299,7 +1306,15 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "number",
+                "date",
+                "status",
+                "delivery_info",
+                "cart_item",
+                "total_cost",
+                "discount",
+                "discounted_cost"
               ],
               "properties": {
                 "id": {
@@ -1356,7 +1371,10 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "first_name",
+          "last_name",
+          "phone_number"
         ],
         "properties": {
           "username": {
@@ -1406,7 +1424,11 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firs_name",
+                "last_name",
+                "phone_number",
+                "is_novaposhta"
               ],
               "properties": {
                 "id": {

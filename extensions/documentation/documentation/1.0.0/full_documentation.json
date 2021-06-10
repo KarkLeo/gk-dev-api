@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/10/2021 7:00:05 PM"
+    "x-generation-date": "06/10/2021 10:46:33 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5594,7 +5594,8 @@
     "schemas": {
       "Cart-setting": {
         "required": [
-          "id"
+          "id",
+          "wholesale_limit"
         ],
         "properties": {
           "id": {
@@ -5605,7 +5606,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "total_cost",
+                "discount"
               ],
               "properties": {
                 "id": {
@@ -5630,13 +5633,18 @@
         }
       },
       "NewCart-setting": {
+        "required": [
+          "wholesale_limit"
+        ],
         "properties": {
           "discount_settings": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "total_cost",
+                "discount"
               ],
               "properties": {
                 "id": {
@@ -5679,7 +5687,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "phone_number"
               ],
               "properties": {
                 "id": {
@@ -5696,7 +5705,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "address",
+                "coordinates"
               ],
               "properties": {
                 "id": {
@@ -5716,7 +5727,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
@@ -5743,7 +5756,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "email"
               ],
               "properties": {
                 "id": {
@@ -5814,7 +5828,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "phone_number"
               ],
               "properties": {
                 "id": {
@@ -5831,7 +5846,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "address",
+                "coordinates"
               ],
               "properties": {
                 "id": {
@@ -5851,7 +5868,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
@@ -5878,7 +5897,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "email"
               ],
               "properties": {
                 "id": {
@@ -5958,7 +5978,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -6062,7 +6083,11 @@
                       "type": "array",
                       "items": {
                         "required": [
-                          "id"
+                          "id",
+                          "name",
+                          "vandor_code",
+                          "slug",
+                          "price"
                         ],
                         "properties": {
                           "id": {
@@ -6192,7 +6217,8 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -6296,7 +6322,11 @@
                       "type": "array",
                       "items": {
                         "required": [
-                          "id"
+                          "id",
+                          "name",
+                          "vandor_code",
+                          "slug",
+                          "price"
                         ],
                         "properties": {
                           "id": {
@@ -6396,7 +6426,15 @@
       },
       "Order": {
         "required": [
-          "id"
+          "id",
+          "number",
+          "date",
+          "status",
+          "delivery_info",
+          "cart_item",
+          "total_cost",
+          "discount",
+          "discounted_cost"
         ],
         "properties": {
           "id": {
@@ -6423,7 +6461,10 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "first_name",
+              "last_name",
+              "phone_number"
             ],
             "properties": {
               "id": {
@@ -6485,7 +6526,11 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "firs_name",
+              "last_name",
+              "phone_number",
+              "is_novaposhta"
             ],
             "properties": {
               "id": {
@@ -6519,7 +6564,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "count",
+                "current_price"
               ],
               "properties": {
                 "id": {
@@ -6527,7 +6574,11 @@
                 },
                 "product": {
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
                   ],
                   "properties": {
                     "id": {
@@ -6619,6 +6670,16 @@
         }
       },
       "NewOrder": {
+        "required": [
+          "number",
+          "date",
+          "status",
+          "delivery_info",
+          "cart_item",
+          "total_cost",
+          "discount",
+          "discounted_cost"
+        ],
         "properties": {
           "number": {
             "type": "uid"
@@ -6643,7 +6704,11 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "firs_name",
+              "last_name",
+              "phone_number",
+              "is_novaposhta"
             ],
             "properties": {
               "id": {
@@ -6677,7 +6742,9 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "count",
+                "current_price"
               ],
               "properties": {
                 "id": {
@@ -6685,7 +6752,11 @@
                 },
                 "product": {
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
                   ],
                   "properties": {
                     "id": {
@@ -6784,7 +6855,9 @@
       },
       "Product-category": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -6800,7 +6873,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -6873,7 +6950,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "slug"
               ],
               "properties": {
                 "id": {
@@ -6922,6 +7001,10 @@
         }
       },
       "NewProduct-category": {
+        "required": [
+          "name",
+          "slug"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -6958,7 +7041,9 @@
       },
       "Product-tag": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "key"
         ],
         "properties": {
           "id": {
@@ -6974,7 +7059,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -7047,7 +7136,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "key"
               ],
               "properties": {
                 "id": {
@@ -7096,6 +7187,10 @@
         }
       },
       "NewProduct-tag": {
+        "required": [
+          "name",
+          "key"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -7132,7 +7227,11 @@
       },
       "Product": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "vandor_code",
+          "slug",
+          "price"
         ],
         "properties": {
           "id": {
@@ -7237,7 +7336,9 @@
           },
           "category": {
             "required": [
-              "id"
+              "id",
+              "name",
+              "slug"
             ],
             "properties": {
               "id": {
@@ -7279,7 +7380,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "key"
               ],
               "properties": {
                 "id": {
@@ -7322,7 +7425,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -7401,6 +7508,12 @@
         }
       },
       "NewProduct": {
+        "required": [
+          "name",
+          "vandor_code",
+          "slug",
+          "price"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -7525,7 +7638,10 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "first_name",
+                "last_name",
+                "phone_number"
               ],
               "properties": {
                 "id": {
@@ -7626,7 +7742,10 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "first_name",
+          "last_name",
+          "phone_number"
         ],
         "properties": {
           "id": {
@@ -7703,7 +7822,11 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firs_name",
+                "last_name",
+                "phone_number",
+                "is_novaposhta"
               ],
               "properties": {
                 "id": {
@@ -7737,7 +7860,15 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "number",
+                "date",
+                "status",
+                "delivery_info",
+                "cart_item",
+                "total_cost",
+                "discount",
+                "discounted_cost"
               ],
               "properties": {
                 "id": {
@@ -7794,7 +7925,10 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "first_name",
+          "last_name",
+          "phone_number"
         ],
         "properties": {
           "username": {
@@ -7844,7 +7978,11 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firs_name",
+                "last_name",
+                "phone_number",
+                "is_novaposhta"
               ],
               "properties": {
                 "id": {
