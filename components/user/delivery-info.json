@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_user_delivery_infos",
+  "info": {
+    "name": "delivery_info",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "firs_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "is_novaposhta": {
+      "type": "boolean"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "novaposhta_number": {
+      "type": "integer"
+    }
+  }
+}
