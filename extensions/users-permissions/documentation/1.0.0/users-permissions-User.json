@@ -1365,6 +1365,209 @@
                 }
               }
             }
+          },
+          "favorites": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "vandor_code": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "old_price": {
+                  "type": "number"
+                },
+                "wholesale_price": {
+                  "type": "number"
+                },
+                "photos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "current_cart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count",
+                "current_price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "required": [
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "vandor_code": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "old_price": {
+                      "type": "number"
+                    },
+                    "wholesale_price": {
+                      "type": "number"
+                    },
+                    "photos": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "localizations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "current_price": {
+                  "type": "number"
+                }
+              }
+            }
           }
         }
       },
@@ -1462,6 +1665,123 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "favorites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "current_cart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count",
+                "current_price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "required": [
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "vandor_code": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "old_price": {
+                      "type": "number"
+                    },
+                    "wholesale_price": {
+                      "type": "number"
+                    },
+                    "photos": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "localizations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "current_price": {
+                  "type": "number"
+                }
+              }
             }
           },
           "created_by": {

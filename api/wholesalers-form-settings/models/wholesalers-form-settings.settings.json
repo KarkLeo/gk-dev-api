@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "cart_settings",
+  "collectionName": "wholesalers_form_settings",
   "info": {
-    "name": "cart_settings",
-    "description": ""
+    "name": "wholesalers_form_settings"
   },
   "options": {
     "increments": true,
@@ -12,14 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "discount_settings": {
+    "field": {
       "type": "component",
       "repeatable": true,
-      "component": "cart.discount-settings"
-    },
-    "wholesale_limit": {
-      "type": "decimal",
-      "required": true
+      "component": "form.field"
     }
   }
 }

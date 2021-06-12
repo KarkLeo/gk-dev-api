@@ -10,6 +10,9 @@
     "email": {
       "type": "email",
       "required": true
+    },
+    "label": {
+      "type": "string"
     }
   }
 }

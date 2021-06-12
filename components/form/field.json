@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_form_fields",
+  "info": {
+    "name": "field",
+    "icon": "edit"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    }
+  }
+}

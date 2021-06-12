@@ -337,6 +337,9 @@
                 },
                 "phone_number": {
                   "type": "string"
+                },
+                "label": {
+                  "type": "string"
                 }
               }
             }
@@ -405,6 +408,9 @@
                   "type": "string"
                 },
                 "email": {
+                  "type": "string"
+                },
+                "label": {
                   "type": "string"
                 }
               }
@@ -478,6 +484,9 @@
                 },
                 "phone_number": {
                   "type": "string"
+                },
+                "label": {
+                  "type": "string"
                 }
               }
             }
@@ -546,6 +555,9 @@
                   "type": "string"
                 },
                 "email": {
+                  "type": "string"
+                },
+                "label": {
                   "type": "string"
                 }
               }

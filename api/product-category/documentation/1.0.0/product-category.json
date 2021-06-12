@@ -584,16 +584,31 @@
                     "type": "string"
                   }
                 },
-                "size": {
-                  "type": "string"
-                },
-                "weight": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "string"
                 },
                 "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
                   "type": "array",
                   "items": {
                     "type": "string"

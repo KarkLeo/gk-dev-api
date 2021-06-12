@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/10/2021 10:46:33 PM"
+    "x-generation-date": "06/12/2021 3:24:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3363,6 +3363,318 @@
         ]
       }
     },
+    "/wholesalers-form-settings": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the wholesalers-form-settings's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve wholesalers-form-settings document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wholesalers-form-settings"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single wholesalers-form-settings record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wholesalers-form-settings document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wholesalers-form-settings"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWholesalers-form-settings"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single wholesalers-form-settings record",
+        "responses": {
+          "200": {
+            "description": "deletes a single wholesalers-form-settings based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wholesalers-form-settings"
+        ],
+        "parameters": []
+      }
+    },
     "/email/": {
       "post": {
         "deprecated": false,
@@ -5696,6 +6008,9 @@
                 },
                 "phone_number": {
                   "type": "string"
+                },
+                "label": {
+                  "type": "string"
                 }
               }
             }
@@ -5764,6 +6079,9 @@
                   "type": "string"
                 },
                 "email": {
+                  "type": "string"
+                },
+                "label": {
                   "type": "string"
                 }
               }
@@ -5837,6 +6155,9 @@
                 },
                 "phone_number": {
                   "type": "string"
+                },
+                "label": {
+                  "type": "string"
                 }
               }
             }
@@ -5905,6 +6226,9 @@
                   "type": "string"
                 },
                 "email": {
+                  "type": "string"
+                },
+                "label": {
                   "type": "string"
                 }
               }
@@ -6120,16 +6444,31 @@
                               "type": "string"
                             }
                           },
-                          "size": {
-                            "type": "string"
-                          },
-                          "weight": {
-                            "type": "string"
-                          },
                           "category": {
                             "type": "string"
                           },
                           "tags": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "order": {
+                            "type": "integer"
+                          },
+                          "box_length": {
+                            "type": "number"
+                          },
+                          "box_width": {
+                            "type": "number"
+                          },
+                          "box_height": {
+                            "type": "number"
+                          },
+                          "weights": {
+                            "type": "number"
+                          },
+                          "in_favorites": {
                             "type": "array",
                             "items": {
                               "type": "string"
@@ -6359,16 +6698,31 @@
                               "type": "string"
                             }
                           },
-                          "size": {
-                            "type": "string"
-                          },
-                          "weight": {
-                            "type": "string"
-                          },
                           "category": {
                             "type": "string"
                           },
                           "tags": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "order": {
+                            "type": "integer"
+                          },
+                          "box_length": {
+                            "type": "number"
+                          },
+                          "box_width": {
+                            "type": "number"
+                          },
+                          "box_height": {
+                            "type": "number"
+                          },
+                          "weights": {
+                            "type": "number"
+                          },
+                          "in_favorites": {
                             "type": "array",
                             "items": {
                               "type": "string"
@@ -6515,6 +6869,15 @@
                   "type": "string"
                 }
               },
+              "favorites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "current_cart": {
+                "type": "component"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -6611,16 +6974,31 @@
                         "type": "string"
                       }
                     },
-                    "size": {
-                      "type": "string"
-                    },
-                    "weight": {
-                      "type": "string"
-                    },
                     "category": {
                       "type": "string"
                     },
                     "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
                       "type": "array",
                       "items": {
                         "type": "string"
@@ -6789,16 +7167,31 @@
                         "type": "string"
                       }
                     },
-                    "size": {
-                      "type": "string"
-                    },
-                    "weight": {
-                      "type": "string"
-                    },
                     "category": {
                       "type": "string"
                     },
                     "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
                       "type": "array",
                       "items": {
                         "type": "string"
@@ -6910,16 +7303,31 @@
                     "type": "string"
                   }
                 },
-                "size": {
-                  "type": "string"
-                },
-                "weight": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "string"
                 },
                 "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7096,16 +7504,31 @@
                     "type": "string"
                   }
                 },
-                "size": {
-                  "type": "string"
-                },
-                "weight": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "string"
                 },
                 "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7328,12 +7751,6 @@
               }
             }
           },
-          "size": {
-            "type": "string"
-          },
-          "weight": {
-            "type": "string"
-          },
           "category": {
             "required": [
               "id",
@@ -7421,6 +7838,99 @@
               }
             }
           },
+          "order": {
+            "type": "integer"
+          },
+          "box_length": {
+            "type": "number"
+          },
+          "box_width": {
+            "type": "number"
+          },
+          "box_height": {
+            "type": "number"
+          },
+          "weights": {
+            "type": "number"
+          },
+          "in_favorites": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email",
+                "first_name",
+                "last_name",
+                "phone_number"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "first_name": {
+                  "type": "string"
+                },
+                "last_name": {
+                  "type": "string"
+                },
+                "phone_number": {
+                  "type": "string"
+                },
+                "delivery_info": {
+                  "type": "component"
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "favorites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "current_cart": {
+                  "type": "component"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -7462,16 +7972,31 @@
                     "type": "string"
                   }
                 },
-                "size": {
-                  "type": "string"
-                },
-                "weight": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "string"
                 },
                 "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7536,16 +8061,31 @@
           "wholesale_price": {
             "type": "number"
           },
-          "size": {
-            "type": "string"
-          },
-          "weight": {
-            "type": "string"
-          },
           "category": {
             "type": "string"
           },
           "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "order": {
+            "type": "integer"
+          },
+          "box_length": {
+            "type": "number"
+          },
+          "box_width": {
+            "type": "number"
+          },
+          "box_height": {
+            "type": "number"
+          },
+          "weights": {
+            "type": "number"
+          },
+          "in_favorites": {
             "type": "array",
             "items": {
               "type": "string"
@@ -7559,6 +8099,80 @@
           },
           "locale": {
             "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Wholesalers-form-settings": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "field": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "required": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewWholesalers-form-settings": {
+        "properties": {
+          "field": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "required": {
+                  "type": "boolean"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -7691,6 +8305,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "favorites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "current_cart": {
+                  "type": "component"
                 },
                 "created_by": {
                   "type": "string"
@@ -7919,6 +8542,209 @@
                 }
               }
             }
+          },
+          "favorites": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "vandor_code",
+                "slug",
+                "price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "vandor_code": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "old_price": {
+                  "type": "number"
+                },
+                "wholesale_price": {
+                  "type": "number"
+                },
+                "photos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_height": {
+                  "type": "number"
+                },
+                "weights": {
+                  "type": "number"
+                },
+                "in_favorites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "current_cart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count",
+                "current_price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "required": [
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "vandor_code": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "old_price": {
+                      "type": "number"
+                    },
+                    "wholesale_price": {
+                      "type": "number"
+                    },
+                    "photos": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "localizations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "current_price": {
+                  "type": "number"
+                }
+              }
+            }
           }
         }
       },
@@ -8016,6 +8842,123 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "favorites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "current_cart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count",
+                "current_price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "required": [
+                    "id",
+                    "name",
+                    "vandor_code",
+                    "slug",
+                    "price"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "vandor_code": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "uid"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "old_price": {
+                      "type": "number"
+                    },
+                    "wholesale_price": {
+                      "type": "number"
+                    },
+                    "photos": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "order": {
+                      "type": "integer"
+                    },
+                    "box_length": {
+                      "type": "number"
+                    },
+                    "box_width": {
+                      "type": "number"
+                    },
+                    "box_height": {
+                      "type": "number"
+                    },
+                    "weights": {
+                      "type": "number"
+                    },
+                    "in_favorites": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "localizations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "current_price": {
+                  "type": "number"
+                }
+              }
             }
           },
           "created_by": {

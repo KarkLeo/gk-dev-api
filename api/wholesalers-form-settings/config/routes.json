@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wholesalers-form-settings",
+      "handler": "wholesalers-form-settings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wholesalers-form-settings",
+      "handler": "wholesalers-form-settings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wholesalers-form-settings",
+      "handler": "wholesalers-form-settings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -80,6 +80,16 @@
     "orders": {
       "via": "user",
       "collection": "order"
+    },
+    "favorites": {
+      "collection": "product",
+      "via": "in_favorites",
+      "dominant": true
+    },
+    "current_cart": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.cart-item"
     }
   }
 }
