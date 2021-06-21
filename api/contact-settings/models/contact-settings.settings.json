@@ -29,7 +29,12 @@
     "list_of_addresses": {
       "type": "component",
       "repeatable": true,
-      "component": "contact.address"
+      "component": "contact.address",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "list_of_links": {
       "type": "component",
