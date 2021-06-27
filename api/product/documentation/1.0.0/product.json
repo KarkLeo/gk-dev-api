@@ -639,6 +639,9 @@
                   "type": "string"
                 }
               },
+              "order": {
+                "type": "integer"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
