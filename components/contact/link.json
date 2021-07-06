@@ -18,8 +18,17 @@
     "icon": {
       "type": "enumeration",
       "enum": [
+        "email",
+        "facebook",
+        "instagram",
+        "linkedin",
+        "pinterest",
         "telegram",
-        "instagram"
+        "tiktok",
+        "twitter",
+        "viber",
+        "whatsapp",
+        "youtube"
       ]
     }
   }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/26/2021 2:13:42 PM"
+    "x-generation-date": "07/03/2021 11:39:23 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6059,8 +6059,17 @@
                 "icon": {
                   "type": "string",
                   "enum": [
+                    "email",
+                    "facebook",
+                    "instagram",
+                    "linkedin",
+                    "pinterest",
                     "telegram",
-                    "instagram"
+                    "tiktok",
+                    "twitter",
+                    "viber",
+                    "whatsapp",
+                    "youtube"
                   ]
                 }
               }
@@ -6206,8 +6215,17 @@
                 "icon": {
                   "type": "string",
                   "enum": [
+                    "email",
+                    "facebook",
+                    "instagram",
+                    "linkedin",
+                    "pinterest",
                     "telegram",
-                    "instagram"
+                    "tiktok",
+                    "twitter",
+                    "viber",
+                    "whatsapp",
+                    "youtube"
                   ]
                 }
               }

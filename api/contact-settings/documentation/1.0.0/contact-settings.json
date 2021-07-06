@@ -388,8 +388,17 @@
                 "icon": {
                   "type": "string",
                   "enum": [
+                    "email",
+                    "facebook",
+                    "instagram",
+                    "linkedin",
+                    "pinterest",
                     "telegram",
-                    "instagram"
+                    "tiktok",
+                    "twitter",
+                    "viber",
+                    "whatsapp",
+                    "youtube"
                   ]
                 }
               }
@@ -535,8 +544,17 @@
                 "icon": {
                   "type": "string",
                   "enum": [
+                    "email",
+                    "facebook",
+                    "instagram",
+                    "linkedin",
+                    "pinterest",
                     "telegram",
-                    "instagram"
+                    "tiktok",
+                    "twitter",
+                    "viber",
+                    "whatsapp",
+                    "youtube"
                   ]
                 }
               }
