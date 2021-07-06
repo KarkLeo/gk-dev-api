@@ -1,13 +1,21 @@
 module.exports = ({ env }) => ({
   upload: {
-    provider: 'google-cloud-storage',
+    provider: 'cloudinary',
     providerOptions: {
-      bucketName: env('GCLOUD_BUCKET_NAME'),
-      publicFiles: true,
-      uniform: false,
-      serviceAccount: env('GCLOUD_SERVICE_ACCOUNT'),
-      baseUrl: `https://storage.googleapis.com/${env('GCLOUD_BUCKET_NAME')}`,
-      basePath: '',
+      cloud_name: env('CLOUDINARY_NAME'),
+      api_key: env('CLOUDINARY_KEY'),
+      api_secret: env('CLOUDINARY_SECRET'),
     },
+    actionOptions: {
+      upload: {
+        folder: 'gk-strapi-test'
+      },
+      delete: {},
+    },
+    breakpoints: {
+      large: 2000,
+      medium: 1000,
+      small: 600,
+    }
   },
 })
