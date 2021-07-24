@@ -34,7 +34,8 @@
       },
       "type": "dynamiczone",
       "components": [
-        "home-page.product-carousel"
+        "home-page.product-carousel",
+        "home-page.info-block"
       ]
     }
   }
