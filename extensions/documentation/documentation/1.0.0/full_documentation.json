@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/24/2021 11:01:42 AM"
+    "x-generation-date": "07/25/2021 11:39:12 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6428,18 +6428,15 @@
                         "required": [
                           "id",
                           "name",
-                          "vandor_code",
                           "slug",
-                          "price"
+                          "price",
+                          "vendor_code"
                         ],
                         "properties": {
                           "id": {
                             "type": "string"
                           },
                           "name": {
-                            "type": "string"
-                          },
-                          "vandor_code": {
                             "type": "string"
                           },
                           "slug": {
@@ -6492,6 +6489,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "vendor_code": {
+                            "type": "string"
                           },
                           "localizations": {
                             "type": "array",
@@ -6793,18 +6793,15 @@
                         "required": [
                           "id",
                           "name",
-                          "vandor_code",
                           "slug",
-                          "price"
+                          "price",
+                          "vendor_code"
                         ],
                         "properties": {
                           "id": {
                             "type": "string"
                           },
                           "name": {
-                            "type": "string"
-                          },
-                          "vandor_code": {
                             "type": "string"
                           },
                           "slug": {
@@ -6857,6 +6854,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "vendor_code": {
+                            "type": "string"
                           },
                           "localizations": {
                             "type": "array",
@@ -7179,18 +7179,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -7243,6 +7240,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",
@@ -7372,18 +7372,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -7436,6 +7433,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",
@@ -7508,18 +7508,15 @@
               "required": [
                 "id",
                 "name",
-                "vandor_code",
                 "slug",
-                "price"
+                "price",
+                "vendor_code"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "vandor_code": {
                   "type": "string"
                 },
                 "slug": {
@@ -7572,6 +7569,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "vendor_code": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -7718,18 +7718,15 @@
               "required": [
                 "id",
                 "name",
-                "vandor_code",
                 "slug",
-                "price"
+                "price",
+                "vendor_code"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "vandor_code": {
                   "type": "string"
                 },
                 "slug": {
@@ -7782,6 +7779,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "vendor_code": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -7901,18 +7901,15 @@
         "required": [
           "id",
           "name",
-          "vandor_code",
           "slug",
-          "price"
+          "price",
+          "vendor_code"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "vandor_code": {
             "type": "string"
           },
           "slug": {
@@ -8183,24 +8180,24 @@
               }
             }
           },
+          "vendor_code": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "name",
-                "vandor_code",
                 "slug",
-                "price"
+                "price",
+                "vendor_code"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "vandor_code": {
                   "type": "string"
                 },
                 "slug": {
@@ -8254,6 +8251,9 @@
                     "type": "string"
                   }
                 },
+                "vendor_code": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -8287,15 +8287,12 @@
       "NewProduct": {
         "required": [
           "name",
-          "vandor_code",
           "slug",
-          "price"
+          "price",
+          "vendor_code"
         ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "vandor_code": {
             "type": "string"
           },
           "slug": {
@@ -8342,6 +8339,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "vendor_code": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8801,18 +8801,15 @@
               "required": [
                 "id",
                 "name",
-                "vandor_code",
                 "slug",
-                "price"
+                "price",
+                "vendor_code"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "vandor_code": {
                   "type": "string"
                 },
                 "slug": {
@@ -8866,6 +8863,9 @@
                     "type": "string"
                   }
                 },
+                "vendor_code": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -8904,18 +8904,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -8968,6 +8965,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",
@@ -9119,18 +9119,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -9183,6 +9180,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",

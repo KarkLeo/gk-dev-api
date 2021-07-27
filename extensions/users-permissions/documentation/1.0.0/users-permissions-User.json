@@ -1372,18 +1372,15 @@
               "required": [
                 "id",
                 "name",
-                "vandor_code",
                 "slug",
-                "price"
+                "price",
+                "vendor_code"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "vandor_code": {
                   "type": "string"
                 },
                 "slug": {
@@ -1437,6 +1434,9 @@
                     "type": "string"
                   }
                 },
+                "vendor_code": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -1475,18 +1475,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -1539,6 +1536,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",
@@ -1690,18 +1690,15 @@
                   "required": [
                     "id",
                     "name",
-                    "vandor_code",
                     "slug",
-                    "price"
+                    "price",
+                    "vendor_code"
                   ],
                   "properties": {
                     "id": {
                       "type": "string"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "vandor_code": {
                       "type": "string"
                     },
                     "slug": {
@@ -1754,6 +1751,9 @@
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "vendor_code": {
+                      "type": "string"
                     },
                     "localizations": {
                       "type": "array",

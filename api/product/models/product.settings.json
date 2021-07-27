@@ -25,15 +25,6 @@
       "type": "string",
       "required": true
     },
-    "vandor_code": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "slug": {
       "pluginOptions": {
         "i18n": {
@@ -143,6 +134,15 @@
       "via": "favorites",
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "vendor_code": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
