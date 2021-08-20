@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "firs_name": {
+    "first_name": {
       "type": "string",
       "required": true
     },

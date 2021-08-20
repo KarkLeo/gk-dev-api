@@ -626,7 +626,7 @@
             "type": "object",
             "required": [
               "id",
-              "firs_name",
+              "first_name",
               "last_name",
               "phone_number",
               "is_novaposhta"
@@ -635,7 +635,7 @@
               "id": {
                 "type": "string"
               },
-              "firs_name": {
+              "first_name": {
                 "type": "string"
               },
               "last_name": {
@@ -819,7 +819,7 @@
             "type": "object",
             "required": [
               "id",
-              "firs_name",
+              "first_name",
               "last_name",
               "phone_number",
               "is_novaposhta"
@@ -828,7 +828,7 @@
               "id": {
                 "type": "string"
               },
-              "firs_name": {
+              "first_name": {
                 "type": "string"
               },
               "last_name": {

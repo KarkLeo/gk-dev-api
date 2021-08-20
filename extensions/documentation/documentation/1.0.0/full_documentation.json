@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/25/2021 11:39:12 AM"
+    "x-generation-date": "08/18/2021 1:40:19 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7130,7 +7130,7 @@
             "type": "object",
             "required": [
               "id",
-              "firs_name",
+              "first_name",
               "last_name",
               "phone_number",
               "is_novaposhta"
@@ -7139,7 +7139,7 @@
               "id": {
                 "type": "string"
               },
-              "firs_name": {
+              "first_name": {
                 "type": "string"
               },
               "last_name": {
@@ -7323,7 +7323,7 @@
             "type": "object",
             "required": [
               "id",
-              "firs_name",
+              "first_name",
               "last_name",
               "phone_number",
               "is_novaposhta"
@@ -7332,7 +7332,7 @@
               "id": {
                 "type": "string"
               },
-              "firs_name": {
+              "first_name": {
                 "type": "string"
               },
               "last_name": {
@@ -8698,7 +8698,7 @@
               "type": "object",
               "required": [
                 "id",
-                "firs_name",
+                "first_name",
                 "last_name",
                 "phone_number",
                 "is_novaposhta"
@@ -8707,7 +8707,7 @@
                 "id": {
                   "type": "string"
                 },
-                "firs_name": {
+                "first_name": {
                   "type": "string"
                 },
                 "last_name": {
@@ -9057,7 +9057,7 @@
               "type": "object",
               "required": [
                 "id",
-                "firs_name",
+                "first_name",
                 "last_name",
                 "phone_number",
                 "is_novaposhta"
@@ -9066,7 +9066,7 @@
                 "id": {
                   "type": "string"
                 },
-                "firs_name": {
+                "first_name": {
                   "type": "string"
                 },
                 "last_name": {
