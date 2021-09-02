@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/front-refresh",
+      "handler": "front-refresh.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
