@@ -326,6 +326,13 @@
           "consfig": {
             "type": "object"
           },
+          "last_update": {
+            "type": "string",
+            "format": "date"
+          },
+          "data": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -335,6 +342,13 @@
       "NewCurrency-setting": {
         "properties": {
           "consfig": {
+            "type": "object"
+          },
+          "last_update": {
+            "type": "string",
+            "format": "date"
+          },
+          "data": {
             "type": "object"
           },
           "published_at": {
