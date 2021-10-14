@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/04/2021 3:39:27 PM"
+    "x-generation-date": "10/14/2021 8:23:14 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7354,6 +7354,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }
@@ -7547,6 +7550,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }
@@ -9079,6 +9085,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }
@@ -9294,6 +9303,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }

@@ -17,6 +17,9 @@
     "current_price": {
       "type": "decimal",
       "required": true
+    },
+    "vendor_code": {
+      "type": "string"
     }
   }
 }

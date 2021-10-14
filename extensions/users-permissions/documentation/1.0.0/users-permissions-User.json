@@ -1565,6 +1565,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }
@@ -1780,6 +1783,9 @@
                 },
                 "current_price": {
                   "type": "number"
+                },
+                "vendor_code": {
+                  "type": "string"
                 }
               }
             }
