@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/14/2021 8:23:14 PM"
+    "x-generation-date": "10/15/2021 12:25:03 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7244,6 +7244,9 @@
               },
               "novaposhta_number": {
                 "type": "integer"
+              },
+              "post_code": {
+                "type": "string"
               }
             }
           },
@@ -7440,6 +7443,9 @@
               },
               "novaposhta_number": {
                 "type": "integer"
+              },
+              "post_code": {
+                "type": "string"
               }
             }
           },
@@ -8818,6 +8824,9 @@
                 },
                 "novaposhta_number": {
                   "type": "integer"
+                },
+                "post_code": {
+                  "type": "string"
                 }
               }
             }
@@ -9180,6 +9189,9 @@
                 },
                 "novaposhta_number": {
                   "type": "integer"
+                },
+                "post_code": {
+                  "type": "string"
                 }
               }
             }

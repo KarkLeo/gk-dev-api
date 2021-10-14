@@ -1298,6 +1298,9 @@
                 },
                 "novaposhta_number": {
                   "type": "integer"
+                },
+                "post_code": {
+                  "type": "string"
                 }
               }
             }
@@ -1660,6 +1663,9 @@
                 },
                 "novaposhta_number": {
                   "type": "integer"
+                },
+                "post_code": {
+                  "type": "string"
                 }
               }
             }
