@@ -1574,6 +1574,10 @@
                 }
               }
             }
+          },
+          "is_wholesaler": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -1795,6 +1799,10 @@
                 }
               }
             }
+          },
+          "is_wholesaler": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

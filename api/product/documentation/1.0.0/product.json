@@ -788,6 +788,9 @@
                 "current_cart": {
                   "type": "component"
                 },
+                "is_wholesaler": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
