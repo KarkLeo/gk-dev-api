@@ -1360,6 +1360,12 @@
                 "description": {
                   "type": "string"
                 },
+                "user_phone_number": {
+                  "type": "string"
+                },
+                "user_email": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

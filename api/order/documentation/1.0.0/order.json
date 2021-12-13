@@ -789,6 +789,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "user_phone_number": {
+            "type": "string"
+          },
+          "user_email": {
+            "type": "string"
           }
         }
       },
@@ -987,6 +993,12 @@
             "type": "number"
           },
           "description": {
+            "type": "string"
+          },
+          "user_phone_number": {
+            "type": "string"
+          },
+          "user_email": {
             "type": "string"
           },
           "created_by": {
