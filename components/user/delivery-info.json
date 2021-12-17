@@ -9,19 +9,19 @@
   "attributes": {
     "first_name": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "last_name": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "phone_number": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "is_novaposhta": {
       "type": "boolean",
-      "required": true
+      "required": false
     },
     "city": {
       "type": "string"

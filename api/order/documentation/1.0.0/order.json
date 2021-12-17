@@ -628,11 +628,7 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id",
-              "first_name",
-              "last_name",
-              "phone_number",
-              "is_novaposhta"
+              "id"
             ],
             "properties": {
               "id": {
@@ -833,11 +829,7 @@
           "delivery_info": {
             "type": "object",
             "required": [
-              "id",
-              "first_name",
-              "last_name",
-              "phone_number",
-              "is_novaposhta"
+              "id"
             ],
             "properties": {
               "id": {
